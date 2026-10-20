@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "veritrace-poc"
+version = "0.1.0"
+description = "An inspectable proof of concept for implementation-aware neural network verification"
+requires-python = ">=3.11"
+dependencies = ["numpy==2.4.0", "onnx==1.19.1", "z3-solver==4.15.4.0"]
+
+[project.optional-dependencies]
+runtime = ["onnxruntime==1.29.0"]
+
+[project.scripts]
+veritrace = "veritrace.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["veritrace*"]

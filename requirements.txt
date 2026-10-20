@@ -1,0 +1,5 @@
+# Direct versions used by the demo. The manifest also records installed versions.
+numpy==2.4.0
+onnx==1.19.1
+z3-solver==4.15.4.0
+onnxruntime==1.29.0
